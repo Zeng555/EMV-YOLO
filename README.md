@@ -2,7 +2,7 @@
 
 # Abstract
 
-![intro_figure2](E:\EMV-YOLO-main\figures\intro_figure2.png)
+![intro_figure2](.\figures\intro_figure2.png)
 
 Detectors trained on well-lit data often experience significant performance degradation when applied to low-light conditions. To address this challenge, low-light enhancement methods are commonly employed to improve detection performance. However, existing human vision-oriented enhancement methods have shown limited effectiveness, which overlooks the semantic information for detection and achieves high computation costs. To overcome these limitations, we introduce a machine vision-oriented highly efficient low-light object detection method with the Efficient semantic-guided Machine Vision-oriented module (EMV). EMV can dynamically adapt to the object detection part based on end-to-end training and emphasize the semantic information for the detection. Besides, by lightening the network for feature decomposition and generating the enhanced image on latent space, EMV is a highly lightweight network for image enhancement, which contains only 27K parameters and achieves high inference speed. Extensive experiments conducted on ExDark and DarkFace datasets demonstrate that our method significantly improves detector performance in low-light environments.
 
@@ -58,4 +58,4 @@ Detectors trained on well-lit data often experience significant performance degr
 
    
 
-![final_vis](E:\EMV-YOLO-main\figures\final_vis.png)
+![final_vis](.\figures\final_vis.png)

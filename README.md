@@ -14,7 +14,7 @@ Detectors trained on well-lit data often experience significant performance degr
 
 **Step 1: Dataset Download**
 
-(1). Download **EXDark** (include images enhancement by MBLLEN, Zero-DCE, KIND, PairLIE) in VOC format from  [Baidu Netdisk](https://pan.baidu.com/s/1pBVvbj4Q5c9npGYRiX9Gqw?pwd=1234), passwd:1234.
+(1). Download **EXDark** (include images enhancement by MBLLEN, Zero-DCE, KIND, PairLIE) in VOC format from  [baiduyun](https://pan.baidu.com/s/1m4BMVqClhMks4S0xulkCcA), passwd:1234.
 
 (2). Then unzip:
 
@@ -108,4 +108,12 @@ EXDark
    ```
 
    
+
+#### Reference
+
+Detection task is use [mmdetection](https://mmdetection.readthedocs.io/en/latest/), some of the code are borrow from [IAT](https://github.com/cuiziteng/Illumination-Adaptive-Transformer) , thanks so much!
+
+
+
+If this code or paper help you, please cite us.
 

@@ -1,0 +1,136 @@
+Metadata-Version: 2.1
+Name: mmdet
+Version: 2.15.1
+Summary: OpenMMLab Detection Toolbox and Benchmark
+Home-page: https://github.com/open-mmlab/mmdetection
+Author: OpenMMLab
+Author-email: openmmlab@gmail.com
+License: Apache License 2.0
+Keywords: computer vision,object detection
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pycocotools; platform_system == "Linux"
+Requires-Dist: pycocotools-windows; platform_system == "Windows"
+Requires-Dist: six
+Requires-Dist: terminaltables
+Provides-Extra: all
+Requires-Dist: cython; extra == "all"
+Requires-Dist: numpy; extra == "all"
+Requires-Dist: albumentations>=0.3.2; extra == "all"
+Requires-Dist: cityscapesscripts; extra == "all"
+Requires-Dist: imagecorruptions; extra == "all"
+Requires-Dist: scipy; extra == "all"
+Requires-Dist: sklearn; extra == "all"
+Requires-Dist: matplotlib; extra == "all"
+Requires-Dist: numpy; extra == "all"
+Requires-Dist: pycocotools; platform_system == "Linux" and extra == "all"
+Requires-Dist: pycocotools-windows; platform_system == "Windows" and extra == "all"
+Requires-Dist: six; extra == "all"
+Requires-Dist: terminaltables; extra == "all"
+Requires-Dist: asynctest; extra == "all"
+Requires-Dist: codecov; extra == "all"
+Requires-Dist: flake8; extra == "all"
+Requires-Dist: interrogate; extra == "all"
+Requires-Dist: isort==4.3.21; extra == "all"
+Requires-Dist: kwarray; extra == "all"
+Requires-Dist: mmtrack; extra == "all"
+Requires-Dist: onnx==1.7.0; extra == "all"
+Requires-Dist: onnxruntime==1.5.1; extra == "all"
+Requires-Dist: pytest; extra == "all"
+Requires-Dist: ubelt; extra == "all"
+Requires-Dist: xdoctest>=0.10.0; extra == "all"
+Requires-Dist: yapf; extra == "all"
+Provides-Extra: tests
+Requires-Dist: asynctest; extra == "tests"
+Requires-Dist: codecov; extra == "tests"
+Requires-Dist: flake8; extra == "tests"
+Requires-Dist: interrogate; extra == "tests"
+Requires-Dist: isort==4.3.21; extra == "tests"
+Requires-Dist: kwarray; extra == "tests"
+Requires-Dist: mmtrack; extra == "tests"
+Requires-Dist: onnx==1.7.0; extra == "tests"
+Requires-Dist: onnxruntime==1.5.1; extra == "tests"
+Requires-Dist: pytest; extra == "tests"
+Requires-Dist: ubelt; extra == "tests"
+Requires-Dist: xdoctest>=0.10.0; extra == "tests"
+Requires-Dist: yapf; extra == "tests"
+Provides-Extra: build
+Requires-Dist: cython; extra == "build"
+Requires-Dist: numpy; extra == "build"
+Provides-Extra: optional
+Requires-Dist: albumentations>=0.3.2; extra == "optional"
+Requires-Dist: cityscapesscripts; extra == "optional"
+Requires-Dist: imagecorruptions; extra == "optional"
+Requires-Dist: scipy; extra == "optional"
+Requires-Dist: sklearn; extra == "optional"
+
+# [BMVC 2024] Toward Highly Efficient Semantic-Guided Machine Vision for Low-Light Object Detection
+
+# Abstract
+
+![intro_figure2](E:\EMV-YOLO-main\figures\intro_figure2.png)
+
+Detectors trained on well-lit data often experience significant performance degradation when applied to low-light conditions. To address this challenge, low-light enhancement methods are commonly employed to improve detection performance. However, existing human vision-oriented enhancement methods have shown limited effectiveness, which overlooks the semantic information for detection and achieves high computation costs. To overcome these limitations, we introduce a machine vision-oriented highly efficient low-light object detection method with the Efficient semantic-guided Machine Vision-oriented module (EMV). EMV can dynamically adapt to the object detection part based on end-to-end training and emphasize the semantic information for the detection. Besides, by lightening the network for feature decomposition and generating the enhanced image on latent space, EMV is a highly lightweight network for image enhancement, which contains only 27K parameters and achieves high inference speed. Extensive experiments conducted on ExDark and DarkFace datasets demonstrate that our method significantly improves detector performance in low-light environments.
+
+# Getting Started
+
+## Dependencies
+
+1. Create conda environment
+
+   ```
+   conda create -n EMV-YOLO python=3.8 -y
+   conda activate EMV-YOLO
+   ```
+
+2. Install PyTorch. This repo is tested with PyTorch==1.10.0
+
+   ​	for OSX:
+
+   ```
+   conda install pytorch==1.10.0 torchvision==0.11.0 torchaudio==0.10.0 -c pytorch
+   ```
+
+   ​	for Linux and Windows:
+
+   ```
+   # CUDA 10.2
+   conda install pytorch==1.10.0 torchvision==0.11.0 torchaudio==0.10.0 cudatoolkit=10.2 -c pytorch
+   
+   # CUDA 11.3
+   conda install pytorch==1.10.0 torchvision==0.11.0 torchaudio==0.10.0 cudatoolkit=11.3 -c pytorch -c conda-forge
+   
+   # CPU Only
+   conda install pytorch==1.10.0 torchvision==0.11.0 torchaudio==0.10.0 cpuonly -c pytorch
+   ```
+
+   
+
+3. Install python packages using following command:	
+
+   (1) Download mmcv 1.4.0, and download adapte to your own cuda version and torch version:
+
+   ```
+   pip install mmcv-full==1.4.0 https://download.openmmlab.com/mmcv/dist/{cu_version}/{torch_version}/index.html
+   ```
+
+   (2) Then set up mmdet (2.15.1):
+
+   ```
+   pip install opencv-python scipy
+   pip install -r requirements/build.txt
+   pip install -v -e .
+   ```
+
+   
+
+![final_vis](E:\EMV-YOLO-main\figures\final_vis.png)

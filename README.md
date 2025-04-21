@@ -6,7 +6,7 @@
 
 ## 🔍 Introduction
 
-![intro_figure2](./figures/intro_figure2.png)
+![intro_figure2](./figures/intro_figure.png)
 
 Object detectors trained on well-lit datasets often suffer from significant performance drops in low-light scenarios. To mitigate this issue, low-light enhancement techniques are typically employed. However, most existing methods are designed for human visual perception and fail to effectively utilize semantic information, while also incurring high computational costs.
 

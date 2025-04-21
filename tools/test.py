@@ -22,8 +22,8 @@ from mmdet.models import build_detector
 def parse_args():
     parser = argparse.ArgumentParser(
         description='MMDet test (and eval) a model')
-    parser.add_argument('config', help='test config file path',default='/home/ubuntu/pythonProject/Illumination-Adaptive-Transformer-main/IAT_high/IAT_mmdetection/configs/yolo/yolov3_ReDiff_Exdark_v7.py')
-    parser.add_argument('checkpoint', help='checkpoint file',default='/home/ubuntu/pythonProject/Illumination-Adaptive-Transformer-main/IAT_high/IAT_mmdetection/work_dirs/yolov3_ReDiff_Exdark_v7/best_bbox_mAP_epoch_39.pth')
+    parser.add_argument('config', help='test config file path',default='')
+    parser.add_argument('checkpoint', help='checkpoint file',default='')
     parser.add_argument(
         '--work-dir',
         help='the directory to save the file containing evaluation metrics')

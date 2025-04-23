@@ -17,7 +17,6 @@ from .trident_resnet import TridentResNet
 from .IAT.model import IAT
 from .LLIE.denet import DeNet
 from .LLIE.penet import PeNet
-from .LLIE.Retinex_Net.retinex import RetinexNet
 from .LLIE.EMV.EMV import EMV
 
 
@@ -28,4 +27,4 @@ __all__ = [
     'RegNet', 'ResNet', 'ResNetV1d', 'ResNeXt', 'SSDVGG', 'HRNet',
     'MobileNetV2', 'Res2Net', 'HourglassNet', 'DetectoRS_ResNet',
     'DetectoRS_ResNeXt', 'Darknet', 'ResNeSt', 'TridentResNet', 'CSPDarknet', 
-    'IAT','DeNet','PeNet','RetinexNet','EMV']
+    'IAT','DeNet','PeNet','EMV']

@@ -116,6 +116,19 @@ To train your model:
 python tools/train.py configs/yolo/yolov3_EMV_Exdark.py
 ```
 
+
+Multi GPU:
+If you have multiple GPUs, you can opt for distributed training:
+
+Usage:
+```bash
+bash tools/dist_train.sh <CONFIG> <GPU ID>
+```
+Example:
+```bash
+bash tools/dist_train.sh configs/yolo/yolov3_EMV_Exdark.py 0,1,2,3
+```
+
 ---
 
 ## 🧪 Testing

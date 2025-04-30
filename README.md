@@ -1,6 +1,17 @@
 # [BMVC 2024] Toward Highly Efficient Semantic-Guided Machine Vision for Low-Light Object Detection
+<p align="center">
+<a href="https://paperswithcode.com/sota/2d-object-detection-on-exdark"><img src="https://img.shields.io/badge/SOTA-Getting%20to%20Know%20Low%20light%20Images%20with%20The%20Exclusively%20Dark%20Dataset-brightgreen?logo=paperswithcode">
+</a>
+</p>
+<!-- <p align="center">
+<a href="https://paperswithcode.com/sota/hierarchical-text-segmentation-on-hiertext?p=hi-sam-marrying-segment-anything-model-for"><img src="https://img.shields.io/badge/SOTA-Getting%20to%20Know%20Low%20light%20Images%20with%20The%20Exclusively%20Dark%20Dataset-brightgreen?logo=paperswithcode">
+</a>
+</p> -->
+<p align="center">
+<a href="https://bmva-archive.org.uk/bmvc/2024/papers/Paper_262/paper.pdf">📄 [Paper]</a>
+<a href="https://bmva-archive.org.uk/bmvc/2024/papers/Paper_262/poster.pdf">🖼️ [Poster]</a>
+</p>
 
-📄 [Paper](https://bmva-archive.org.uk/bmvc/2024/papers/Paper_262/paper.pdf) &nbsp;&nbsp;&nbsp;&nbsp;🖼️ [Poster](https://bmva-archive.org.uk/bmvc/2024/papers/Paper_262/poster.pdf)
 
 ---
 

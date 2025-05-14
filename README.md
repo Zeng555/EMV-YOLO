@@ -35,7 +35,7 @@ We validate our approach through extensive experiments on the **ExDark** and **D
 
 **Step 1: Download the EXDark Dataset**
 
-1. Download EXDark (with enhanced images using MBLLEN, Zero-DCE, KIND, PairLIE) in VOC format from [Baidu Netdisk](https://pan.baidu.com/s/12LXkObUyJ1qWemzRbA57RA?pwd=1234) (password: `1234`).
+1. Download EXDark (with enhanced images using MBLLEN, Zero-DCE, KIND, PairLIE) in VOC format from [Baidu Netdisk](https://pan.baidu.com/s/12LXkObUyJ1qWemzRbA57RA?pwd=1234) (password: `1234`), or [Google Drive](https://drive.google.com/file/d/11TJmLxMWQazesTRXOyplwiFpteOEO9IS/view?usp=drive_link).
 
 2. Unzip the dataset:
    ```bash
